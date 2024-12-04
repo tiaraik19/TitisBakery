@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja - Titi's Bakery</title>
+
+    <!--Box Icons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+
+    <!--Fonts - QuickSand-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--NAVBAR-->
+    <header>
+        <a href="index.html" class="logo">Titi's Bakery</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Service</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart-section" id="cart">
+        <div class="heading">
+            <span>Belanja</span>
+            <h2>Keranjang Anda</h2>
+        </div>
+
+        <div class="cart-container">
+            <div class="cart-items" id="cart-items">
+                <!-- Item akan dimasukkan secara dinamis via JavaScript -->
+            </div>
+
+            <div class="cart-summary">
+                <h3>Ringkasan Pesanan</h3>
+                <div class="summary-details">
+                    <p>Total Item: <span id="total-items">0</span></p>
+                    <p>Total Harga: <span id="total-price">Rp. 0</span></p>
+                </div>
+                <button class="btn checkout-btn" id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Copyright-->
+    <div class="copyright">
+        <p>&#169; All Right Reserved.</p>
+    </div>    
+
+    <script src="cart.js"></script>
+</body>
+</html>
